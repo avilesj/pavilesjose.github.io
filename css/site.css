@@ -1,5 +1,5 @@
 html {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #3b444b;
 }
 
@@ -15,12 +15,14 @@ html {
 /*Header*/
 #header-content h2 {
     margin: 0px;
-    margin-left: 9px
+    margin-left: 9px;
+    font-weight:400;
 }
 
 #header-content h3 {
     margin: 0px;
-    margin-left: 9px
+    margin-left: 9px;
+    font-weight:200;
 }
 #header {
     width:auto;
@@ -61,6 +63,7 @@ html {
 #about-text h2 {
     margin: 4px;
     opacity: 1.0;
+    font-weight:100;
     
 }
 
@@ -129,7 +132,7 @@ html {
 .text-right h3 {
     margin-left: 18px;
     margin-top:4px;
-    margin-bottom:0px;
+    margin-bottom:8px;
 }
 
 /*Right portfolio image*/
@@ -172,7 +175,7 @@ html {
 .text-left h3 {
      margin-left: 18px;
     margin-top:4px;
-    margin-bottom:0px;
+    margin-bottom:8px;
 }
 
 /*Separator*/
@@ -181,6 +184,7 @@ html {
     margin-right: auto;
     height: auto;
     width: 100%;
+    font-weight:600;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.20);
 }
 
