@@ -1,5 +1,6 @@
 html {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #3b444b;
 }
 
 #main-container {
@@ -22,34 +23,48 @@ html {
     margin-left: 9px
 }
 #header {
-    background-color: red;
     width:auto;
     height: 100px;
+    
 }
 /*About*/
 #about {
-    background-color: blue;
     width: auto;
     height: 300px;
+    color: #FFFFF2;
+    background-color: #3b444b;
     
 }
 
 #about-content {
     display: flex;
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+#about-background {
+    background-image: url("../img/about.jpg");
+    width:100%;
+    height: 300px;
+    opacity: 0.5;
+    position: absolute;    
 }
 
 #about-text {
     height: 100%;
     width: 70%;
+    z-index: 1;
+    margin: 5px;
 }
 
 #about-text h2 {
-    color: white;
     margin: 4px;
+    opacity: 1.0;
+    
 }
 
 #about-text p {
-    color: white;
     margin: 4px;
 }
 
@@ -57,7 +72,8 @@ html {
     height: 100%;
     width:30%;
     overflow: hidden;
-    
+    margin-right: 7px;
+    z-index: 1;
 }
 
 #about-img img {
@@ -68,7 +84,6 @@ html {
 }
 /*Portfolio*/
 #portfolio {
-    background-color: green;
     width:auto;
     height: 480px;
 }
@@ -82,7 +97,6 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    background-color: rebeccapurple;
     overflow: hidden;
     
 }
@@ -103,7 +117,6 @@ html {
 }
 
 .text-right p {
-    color: white;
     text-align: left;
     margin: 4px;
     font-size: 10pt
@@ -111,7 +124,6 @@ html {
 }
 
 .text-right h3 {
-    color: white;
     margin: 4px;
 }
 
@@ -121,7 +133,6 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    background-color:brown;
     overflow: hidden;
     transform: scale(-1, 1);
 }
@@ -143,7 +154,6 @@ html {
 }
 
 .text-left p {
-    color: white;
     text-align: left;
     margin: 4px;
     font-size: 10pt
@@ -151,7 +161,6 @@ html {
 }
 
 .text-left h3 {
-    color: white;
     margin: 4px;
 }
 
@@ -160,6 +169,7 @@ html {
     margin-right: auto;
     height: auto;
     width: 100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.20);
 }
 
 #separator p {
