@@ -11,13 +11,22 @@ html {
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
     border-radius: 10px;
 }
+/*Header*/
+#header-content h2 {
+    margin: 0px;
+    margin-left: 9px
+}
 
+#header-content h3 {
+    margin: 0px;
+    margin-left: 9px
+}
 #header {
     background-color: red;
     width:auto;
     height: 100px;
 }
-
+/*About*/
 #about {
     background-color: blue;
     width: auto;
@@ -25,6 +34,39 @@ html {
     
 }
 
+#about-content {
+    display: flex;
+}
+
+#about-text {
+    height: 100%;
+    width: 70%;
+}
+
+#about-text h2 {
+    color: white;
+    margin: 4px;
+}
+
+#about-text p {
+    color: white;
+    margin: 4px;
+}
+
+#about-img {
+    height: 100%;
+    width:30%;
+    overflow: hidden;
+    
+}
+
+#about-img img {
+    height: auto;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 150px
+}
+/*Portfolio*/
 #portfolio {
     background-color: green;
     width:auto;
@@ -37,6 +79,7 @@ html {
 
 /*Left portfolio image*/
 .project-image-left {
+    display: flex;
     width: auto;
     height: 25%;
     background-color: rebeccapurple;
@@ -46,6 +89,7 @@ html {
 
 .img-left {
     width: 50%;
+    height: auto;
 }
 
 .img-left img {
@@ -53,13 +97,28 @@ html {
     width: 100%;
 }
 
-
-/*Right portfolio image*/
 .text-right {
+    width: 50%;
+    height: auto;
+}
+
+.text-right p {
+    color: white;
+    text-align: left;
+    margin: 4px;
+    font-size: 10pt
     
 }
 
+.text-right h3 {
+    color: white;
+    margin: 4px;
+}
+
+/*Right portfolio image*/
+
 .project-image-right {
+    display: flex;
     width: auto;
     height: 25%;
     background-color:brown;
@@ -69,10 +128,41 @@ html {
 
 .img-right {
     width: 50%;
-    
+    height: auto;
 }
 
 .img-right img {
     height: auto;
     width: 100%;
+}
+
+.text-left {
+    transform: scale(-1, 1);
+    width: 50%;
+    height: 100%;
+}
+
+.text-left p {
+    color: white;
+    text-align: left;
+    margin: 4px;
+    font-size: 10pt
+    
+}
+
+.text-left h3 {
+    color: white;
+    margin: 4px;
+}
+
+#separator {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+#separator p {
+    margin: 1px;
+    text-align: center;
 }
