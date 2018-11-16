@@ -100,15 +100,15 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    overflow: hidden;
-    margin-bottom: 7px;
     
+    margin-bottom: 7px;
 }
 
 .img-left {
     width: 50%;
     height: auto; 
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    overflow: hidden;
 }
 
 .img-left img {
@@ -141,7 +141,6 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    overflow: hidden;
     transform: scale(-1, 1);
     margin-bottom: 7px;
 }
@@ -149,6 +148,7 @@ html {
 .img-right {
     width: 50%;
     height: auto;
+    overflow: hidden;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 }
 
