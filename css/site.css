@@ -1,12 +1,13 @@
 html {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #3b444b;
+    background-color: #f8f8ff;
 }
 
 #main-container {
     width: 800px;
     height: 99%;
-    background-color: #FFFFF2;
+    background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
