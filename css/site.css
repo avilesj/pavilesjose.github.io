@@ -203,3 +203,11 @@ html {
     margin: 1px;
     text-align: center;
 }
+
+@media (max-width: 960px) {
+    #main-container {
+        width:auto;
+        height:auto;
+        overflow:scroll;
+    }
+}
