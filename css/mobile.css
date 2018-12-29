@@ -3,11 +3,15 @@
     padding: 0px;
 }
 
+body {
+    height: 100%;
+    background-color: #353839;
+}
+
 /* Main container definition */
 #main-container {
     display: flex;
     flex-direction: column;
-    background-color: #353839;
 }
 
 #body-container {
@@ -91,7 +95,9 @@
 .menu-icon {
     padding: 10px;
     cursor: pointer;
-    float:right;
+    right: 0;
+    position: absolute;
+    z-index: 2;
 }
 .menu-icon-bar-1,
 .menu-icon-bar-2,
@@ -125,9 +131,10 @@
     padding: 0px;
 }
 
- .content .content-active {
+.content.content-active{
         color: #3b443b;
         position: absolute;
+        z-index: 1;
         transition: all 0.5s;
         font-family: 'Quicksand', sans-serif;
         display: flex;
@@ -152,3 +159,29 @@
     height: auto;
     border-radius: 150px;
 }
+
+    .network-container {
+        width: inherit;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .network-container i {
+        margin-right: 3%;
+        margin-top:1%;
+        padding: 5%;
+    }
+
+    .network-container i:hover,
+    .network-container i:focus {
+        color: #FFD446;
+        background-color: #3b444b;
+    }
+
+    .about-container {
+        word-wrap: break-word;
+        padding: 15px;
+    }
