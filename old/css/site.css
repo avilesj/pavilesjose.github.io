@@ -1,26 +1,36 @@
 html {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #3b444b;
+    background-color: #f8f8ff;
 }
 
 #main-container {
     width: 800px;
     height: 99%;
-    background-color: #FFFFF2;
+    background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
     border-radius: 10px;
 }
 /*Header*/
+
+#header-content {
+    padding:15px;
+    text-align:center;
+}
 #header-content h2 {
     margin: 0px;
-    margin-left: 9px
+    margin-left: 9px;
+    font-weight:400;
+    font-size:24pt;
 }
 
 #header-content h3 {
     margin: 0px;
-    margin-left: 9px
+    margin-left: 9px;
+    font-weight:200;
+    font-size:18pt;
 }
 #header {
     width:auto;
@@ -30,7 +40,7 @@ html {
 /*About*/
 #about {
     width: auto;
-    height: 300px;
+    height: 240px;
     color: #FFFFF2;
     background-color: #3b444b;
     
@@ -46,7 +56,7 @@ html {
 #about-background {
     background-image: url("../img/about.jpg");
     width:100%;
-    height: 300px;
+    height: 240px;
     opacity: 0.5;
     position: absolute;    
 }
@@ -61,6 +71,7 @@ html {
 #about-text h2 {
     margin: 4px;
     opacity: 1.0;
+    font-weight:100;
     
 }
 
@@ -70,9 +81,8 @@ html {
 
 #about-img {
     height: 100%;
-    width:30%;
+    width:25%;
     overflow: hidden;
-    margin-right: 7px;
     z-index: 1;
 }
 
@@ -89,7 +99,7 @@ html {
 }
 
 #portfolio-content {
-    
+    margin: 10px
 }
 
 /*Left portfolio image*/
@@ -97,13 +107,15 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    overflow: hidden;
     
+    margin-bottom: 7px;
 }
 
 .img-left {
     width: 50%;
-    height: auto;
+    height: auto; 
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    overflow: hidden;
 }
 
 .img-left img {
@@ -118,13 +130,16 @@ html {
 
 .text-right p {
     text-align: left;
-    margin: 4px;
-    font-size: 10pt
-    
+    margin-left: 18px;
+    margin-top:-4px;
+    margin-bottom:0px;
+    font-size: 10pt;
 }
 
 .text-right h3 {
-    margin: 4px;
+    margin-left: 18px;
+    margin-top:4px;
+    margin-bottom:8px;
 }
 
 /*Right portfolio image*/
@@ -133,13 +148,15 @@ html {
     display: flex;
     width: auto;
     height: 25%;
-    overflow: hidden;
     transform: scale(-1, 1);
+    margin-bottom: 7px;
 }
 
 .img-right {
     width: 50%;
     height: auto;
+    overflow: hidden;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 }
 
 .img-right img {
@@ -155,24 +172,42 @@ html {
 
 .text-left p {
     text-align: left;
-    margin: 4px;
+    margin-left: 18px;
+    margin-top:-4px;
+    margin-bottom:0px;
+    font-size: 10pt;
     font-size: 10pt
     
 }
 
 .text-left h3 {
-    margin: 4px;
+     margin-left: 18px;
+    margin-top:4px;
+    margin-bottom:8px;
 }
 
+/*Separator*/
 #separator {
     margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 100%;
+    font-weight:600;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.20);
+    padding-top: 3px;
+    padding-bottom: 3px;
+
 }
 
 #separator p {
     margin: 1px;
     text-align: center;
+}
+
+@media (max-width: 960px) {
+    #main-container {
+        width:auto;
+        height:auto;
+        overflow:scroll;
+    }
 }
