@@ -32,11 +32,19 @@ let toggleContent = (id) => {
 
 let toggleContentContainer = () => {
     document.getElementById("content-container").classList.toggle("hidden");
+    
+}
+
+let closeContentContainer = () => {
+    
+    document.getElementById("content-container").classList.toggle("hidden");
+    let currentActiveElement = document.querySelectorAll(".content-active")[0];
+    currentActiveElement.classList.toggle("hidden");
+    currentActiveElement.classList.toggle("content-active");
 }
 
 let evaluateDisplay = () => {
     if (window.screen.availWidth < 600) {
-        toggleContent("first");
         toggleContentContainer();
     }
 }
